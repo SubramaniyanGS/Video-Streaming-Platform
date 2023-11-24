@@ -1,0 +1,89 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: #ac31df;
+    background-size: cover; 
+    background-position: center;
+    backdrop-filter: blur(10px);
+}
+h2{
+    font-size:2em;
+    color: #ff00a9;
+    text-align: center;
+    border-radius: 2px;
+}
+form{
+    background: #27273f; 
+    width: 450px;
+    height: 600px;
+    padding: 50px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 20px ;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+label{
+    font-size: 1em;
+    color: white;
+    transform: translateY(-50%);
+}
+input[type="button"]{
+    background-image: linear-gradient(to right,#f407b0,#ac31df,#572ac4);
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+p{
+    font-size: 14px;
+    margin: 10px 0;
+    display: inline-block;
+    color: #c38ef8;
+}
+  input[type="button"]:hover {
+    background-image: linear-gradient(to left, #f207b3,#c823d2,#7332d1,#5028bd);
+  }
+  input[type="button"]:active {
+    background-color: #074023; /* New background color on hover */
+  }
+  .inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fa03aa;
+    font-size: 1.2em;
+    top: 40px;
+}
+
+.inputbox input{
+    width:100%;
+    height: 50px;
+    margin-left: 10px;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #e213bf;
+    background: transparent;
+    border: none;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 350px;
+    border-bottom: 2px solid #542abb;
+}

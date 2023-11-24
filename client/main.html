@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <title>Dot Stream</title>
+</head>
+
+<body>
+   <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Dot<span>Stream</span></h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="main.html">Home</a></li>
+                    <li class="menu-list-item"><a href="">Movies</a></li>
+                    <li class="menu-list-item"><a href="">Series</a></li>
+                    <li class="menu-list-item"><a href="">My List</a></li>
+                    <li class="menu-list-item"><a href="">Search</a></li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                 <a href="#">
+                <i class="subs fas fa-shopping-cart"></i></a>
+                
+                <a href="#">
+                <img class="profile-picture" src="img/account.png" alt=""></a>
+                <div class="dropdown">
+                    <ul>
+                      <li>
+                        <a href="profile.html">
+                          <i class="fas fa-edit"></i>
+                          <span>Edit</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="login.html">
+                          <i class="fas fa-sign-out-alt"></i>
+                          <span>Logout</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div> 
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/avatar.jpeg')no-repeat center/cover;">
+                <img class="featured-title" src="img/avatarname.png" alt="">
+                <p class="featured-desc" id="avatar">Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.</p>
+                <button class="featured-button">WATCH</button>
+                <button class="add-to-list" id="addButton" onclick="addToMyList()">
+                    <span id="text">Add to List</span>
+                    <i id="icon" class="fa fa-plus"></i>
+                  </button>
+                  
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">New Releases</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/fast.jpg" alt="">
+                            <span class="movie-list-item-title">Fast & Furious</span>
+                            <p class="movie-list-item-desc"> Dom must protect his family from Dante Reyes, who seeks revenge for his father's death and the loss of his family's fortune. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                 <i class="add-list-icon fa fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/john.jpg" alt="">
+                            <span class="movie-list-item-title">John Wick 4</span>
+                            <p class="movie-list-item-desc"> John Wick sets out to get revenge on the High Table and those who left him for dead</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/spider.jpg" alt="">
+                            <span class="movie-list-item-title">Spider Man </span>
+                            <p class="movie-list-item-desc"> Miles goes on an adventure with Spider-Woman across the multiverse where he meets a team of Spider-People known as the Spider-Society</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/pathuthala.avif" alt="">
+                            <span class="movie-list-item-title">Pathu Thala</span>
+                            <p class="movie-list-item-desc"> An undercover cop is sent on a mission to nab a notorious mafia don who is suspected of kidnapping the Chief Minister</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/porthozil.avif" alt="">
+                            <span class="movie-list-item-title">Por Thozil</span>
+                            <p class="movie-list-item-desc">An unlikely duo, a veteran cop and a rookie, team up to nab a serial killer</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/evildead.jpg" alt="">
+                            <span class="movie-list-item-title">Evil Dead Arise</span>
+                            <p class="movie-list-item-desc">The movie follows the typical Evil Dead formula of gory horror with dark humour, and delivers on every single front.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ps-2.avif" alt="">
+                            <span class="movie-list-item-title">PS-2</span>
+                            <p class="movie-list-item-desc">Arulmozhi Varman continues on his quest to become Rajaraja I, the greatest ruler of south india's history Chola Empire</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Hollywood</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/inception.jpg" alt="">
+                            <span class="movie-list-item-title">Inception</span>
+                            <p class="movie-list-item-desc">A thief who steals corporate secrets through the use of dream-sharing technology is given inverse task of planting an idea into mind of a C.E.O.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/avengers.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers</span>
+                            <p class="movie-list-item-desc">The Avengers were a team of extraordinary individuals, with either superpowers or other special characteristics. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/conjuring.webp">
+                            <span class="movie-list-item-title">The Conjuring</span>
+                            <p class="movie-list-item-desc"> A truly scary horror movie that's based on a true story about a haunted house, a demon possession, and an exorcism.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/joker.jpg" alt="">
+                            <span class="movie-list-item-title">Joker</span>
+                            <p class="movie-list-item-desc">It follows Arthur Fleck, a failed clown and aspiring stand-up comic whose descent into mental illness and nihilism inspires a violent.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/wall-e.jpg" alt="">
+                            <span class="movie-list-item-title">Wall-E</span>
+                            <p class="movie-list-item-desc">EVE, a sleek reconnaissance robot, is sent to Earth to find proof that life is once again sustainable. WALL-E falls in love with EVE.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/traintobusan.jpg"alt="">
+                            <span class="movie-list-item-title">Train to Busan</span>
+                            <p class="movie-list-item-desc">A man, his estranged daughter and other passengers become trapped on a speeding train during a zombie outbreak in South Korea.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/fall.webp" alt="">
+                            <span class="movie-list-item-title">Fall</span>
+                            <p class="movie-list-item-desc">Fall revolves around a grieving mountain climber named Becky whose husband Dan fell to his death during one of their expeditions.
+                            </p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/theflash.jpg')no-repeat center/cover;">
+                <img class="featured-title" src="img/flashname.png" alt="">
+                <p class="featured-desc" id="flash">Barry Allen uses his super speed to change the past, but his attempt to save his family creates a world without super heroes, forcing him to race for his life in order to save the future.</p>
+                <button class="featured-button">WATCH</button>
+                    <button id="addButton2" class="add-to-list" onclick="addToMyList2()">
+                        <span id="text2">Add to List</span>
+                        <i id="icon2" class="fa fa-plus"></i>
+                </button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Kollywood</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/vikram.jpg" alt="">
+                            <span class="movie-list-item-title">Vikram</span>
+                            <p class="movie-list-item-desc">Vikram and his team of spies were disgraced and hunted down by the government after a covert operation in the 1990s went sideways.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/rocketry.webp" alt="">
+                            <span class="movie-list-item-title">Rocketry</span>
+                            <p class="movie-list-item-desc">Based on the life of Indian Space Research Organization scientist Nambi Narayanan, who was framed for being a spy and arrested in 1994.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/jaibhim.jpg" alt="">
+                            <span class="movie-list-item-title">Jai Bhim</span>
+                            <p class="movie-list-item-desc">Jai Bhim is an authentic masterpiece from India. It's a story of injustice, and it teaches us how a single man can change the whole society.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/master.jpg" alt="">
+                            <span class="movie-list-item-title">Master</span>
+                            <p class="movie-list-item-desc">An alcoholic professor is sent to a juvenile school, where he clashes with a gangster who uses the school children for criminal activities.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/96.webp" alt="">
+                            <span class="movie-list-item-title">96</span>
+                            <p class="movie-list-item-desc"> 96 is an ode to the unconditional love shared by two beautiful souls. It may seem impossible to expect a love story like Ram and Janu's today.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/thunivu.jpg" alt="">
+                            <span class="movie-list-item-title">Thunivu</span>
+                            <p class="movie-list-item-desc"> A gang goes to rob a bank only to realise that there's already a heist underway, led by a seemingly crazy person.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/o2.png" alt="">
+                            <span class="movie-list-item-title">O2</span>
+                            <p class="movie-list-item-desc">Trapped in a landslide, Parvathy has to survive and keep the oxygen flowing into her son Veera's body. What happens when she gets obstructed by a passenger?</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Bollywood</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/dilbechara.webp" alt="">
+                            <span class="movie-list-item-title">Dil Bechara</span>
+                            <p class="movie-list-item-desc"> As romance blooms between two youngsters fighting cancer, Kizie and Manny, they live it up to the fullest.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/raanjhaana.webp" alt="">
+                            <span class="movie-list-item-title">Raanjhaana</span>
+                            <p class="movie-list-item-desc">The story opens its first page from the celestial backdrop of Varanasi. Kundan is a strong believer of God and a son of a Tamil priest.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/brahmastra.avif" alt="">
+                            <span class="movie-list-item-title">Brahmastra</span>
+                            <p class="movie-list-item-desc"> Shiva, a young DJ in Mumbai, discovers that he's born with a special power that makes him immune and akin to fire.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/delhi-6.avif" alt="">
+                            <span class="movie-list-item-title">Delhi-6</span>
+                            <p class="movie-list-item-desc">In the ancient walled city of Delhi, an American-born Indian finds himself on an unexpected inner journey as he learns about himself and his roots.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/atraangire.jpg" alt="">
+                            <span class="movie-list-item-title">Atrangi Re</span>
+                            <p class="movie-list-item-desc">Atrangi Re is a story of love, loss, grief, trauma and how a person navigates through all this and copes with what life has to offer. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/gangubai.webp" alt="">
+                            <span class="movie-list-item-title">Gangubai</span>
+                            <p class="movie-list-item-desc"> Gangubai Kathiawadi is a biopic based on the life of a female don and brothel owner Gangubai Kothewali.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2states.webp" alt="">
+                            <span class="movie-list-item-title">2 States</span>
+                            <p class="movie-list-item-desc">It's about a boy from north India (Krish) who meets a girl from south (Ananya) India in IIM Ahmedabad and fall in love with each other.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button-add" onclick="toggleAddToList(this)">
+                                <i class="add-list-icon fa fa-plus"></i>
+                           </button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Dot<span>Stream</span></h3>
+
+            <p class="footer-links">
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+                
+            </p>
+
+            <p class="footer-company-name">Copyright &copy; 2023 <strong>Dot Stream</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Chennai</span>
+                    Tamil Nadu</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 74**9**258</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:dotstream@gmail.com">dotstream@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About us</span>
+                <strong>Dot Stream</strong> is a Ott Platform where you can watch movies and series.
+            </p>
+            <div class="footer-icons">
+                <a href="https://github.com/MoUsaidh/VideoStreamingPlatform"><i class="fa-brands fa-github"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+
+</html>

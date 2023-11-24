@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <script src="reg.js" defer></script>
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <h1>Register</h1>
+            <div class="inputbox">
+            <div class="input-group">
+                <label for="username">Username<ion-icon name="person-circle-outline"></ion-icon></label>
+                <input type="text" id="username" name="username">
+                <div class="error"></div>
+            </div>
+            
+            <div class="input-group">
+               
+                <label for="email">Email <ion-icon name="mail-unread-outline"></ion-icon></label>
+                <input type="text" id="email" name="email" >
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                
+                <label for="password">Password<ion-icon name="lock-closed-outline"></ion-icon></label>
+                <input type="password" id="password" name="password">
+                <div class="error"></div>
+            </div>
+            <button type="submit" onclic>Register</button></div>
+        </form>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

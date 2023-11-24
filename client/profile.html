@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <h1>Edit Profile</h1>
+  <div class="profile-picture">
+    <img id="selected-icon" src="" alt="Selected Icon">
+    <div class="icon-list">
+      <button id="frozenBtn"><img src="img/frozen.jpg" alt=""></button>
+      <button id="snowBtn"><img src="img/snow.jpg" alt=""></button>
+      <button id="grootBtn"><img src="img/groot.jpg" alt=""></button>
+      <button id="ironBtn"><img src="img/iron.jpg" alt=""></button>
+      <button id="wallBtn"><img src="img/wall.jpg" alt=""></button>
+      <button id="jackBtn"><img src="img/jack.jpg" alt=""></button>
+      <button id="moanaBtn"><img src="img/moana.jpg" alt=""></button>
+      <button id="hulkBtn"><img src="img/hulk.jpg" alt=""></button>
+      <button id="miniBtn"><img src="img/mini.jpg" alt=""></button>
+      <button id="batBtn"><img src="img/bat.jpg" alt=""></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" value="JohnDoe" contenteditable>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" value="johndoe@example.com" contenteditable>
+    </div>
+    
+    <div class="btn-container">
+      <button class="btn" id="saveBtn">Save & Continue</button>
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

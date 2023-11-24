@@ -1,0 +1,117 @@
+body{
+  background-color: #27273f;
+}
+h1{
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  font-size: 2rem;
+}
+.profile-picture {
+  text-align: center;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-list button {
+  flex: 0 0 auto; 
+  margin-right: 10px; 
+  transition: transform 0.5s ease-in-out; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.icon-list button:hover {
+  transform: scale(1.1);
+}
+.icon-list button:focus {
+  outline: none;
+}
+.icon-list button:not(:hover) {
+  transform: scale(1);
+}
+#selected-icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 5px;
+  border: solid 5px #f209b3;
+}
+
+.icon-list button img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  backface-visibility: hidden; 
+
+}
+.icon-list button img:hover{
+  border: solid 3px #c38ef8;
+  padding:5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #c38ef8;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #c38ef8;
+  border-radius: 4px;
+  width: 300px;
+  background: transparent;
+  color:white;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #9b42f6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  background-color: #602ede;
+}
+@media (max-width: 768px) {
+  .profile-picture {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
